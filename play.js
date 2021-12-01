@@ -6,25 +6,17 @@ const connect = function () {
     host: '165.227.47.243',
     port: '50541'
   });
+
+    // interpret incoming data as text
+    conn.setEncoding("utf8");
+
+    return conn;
+  };
+
+const conn = connect();
+
 conn.on('connect', () => {
-  console.log("successfully connected to game server")
+  console.log('New client connected!')
+  conn.write("Name: OTK");
+  conn.write("WASAP")
 });
-
-conn.on('connection', () => {
-  conn.write('Name: OTK');
-});
-
-conn.on('data',(data) => {
-  console.log(data);
-});
-
-
-  // interpret incoming data as text
-  conn.setEncoding("utf8");
-
-  return conn;
-};
-
-console.log("Connecting ...");
-connect();
-
