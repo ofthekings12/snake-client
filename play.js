@@ -8,5 +8,12 @@ const conn = connect();
 conn.on('connect', () => {
   console.log('New client connected!')
   conn.write("Name: OTK");
-  conn.write("WASAP")
+  conn.write("Hey");
+  // conn.write("Move: left")
+  // conn.write("Move: left")
+  // conn.write("Move: left")
 });
+
+
+
+
