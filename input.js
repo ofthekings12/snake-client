@@ -1,7 +1,7 @@
 let connection;
-const handleUserInput = function (data, conn) { // data will be whatever the user pressed on their keyboard in a utf8 string ---> https://www.utf8-chartable.de/
+const handleUserInput = function (data, conn) { 
   if (data === "\u0003") {
-    process.exit(); // leave the game if the user presses ctrl + c
+    process.exit();
   }
   if (data === "w") {
     conn.write("Move: up")
@@ -54,11 +54,7 @@ const handleUserInput = function (data, conn) { // data will be whatever the use
   if (data === "m") {
     conn.write("Say: SRILANKA! WHAAAT?")
   }
-
-
 };
-
-
 
 const setupInput = function (conn) {
   connection = conn;
