@@ -28,10 +28,10 @@ const handleUserInput = function (data, conn) { // data will be whatever the use
     conn.write("Say: FINE FRESH FEMININE")
   }
   if (data === "5") {
-    conn.write("Say: STYLE TO ELEVEN")
+    conn.write("Say: STYLE TO ELEVEN IM")
   }
   if (data === "6") {
-    conn.write("Say: I'M DIVINE SO HEAVENLY")
+    conn.write("Say: DIVINE SO HEAVENLY")
   }
   if (data === "7") {
     conn.write("Say: GENTLEMEN SWEATIN ITS DIMES")
@@ -43,8 +43,18 @@ const handleUserInput = function (data, conn) { // data will be whatever the use
     conn.write("Say: NO DOUBT")
   }
   if (data === "0") {
-    conn.write("Say: BODY LIKE: WWOOOWWWW!")
+    conn.write("Say: BODY LIKE: WWOOOWWW!")
   }
+  if (data === "b") {
+    conn.write("Say: Am I a Nicki fan???")
+  }
+  if (data === "n") {
+    conn.write("Say: PULL UP IN A")
+  }
+  if (data === "m") {
+    conn.write("Say: SRILANKA! WHAAAT?")
+  }
+
 
 };
 
